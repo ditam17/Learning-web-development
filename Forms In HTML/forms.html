@@ -9,11 +9,28 @@
       <link rel="icon" href="froms.png" type="image/x-icon">
     </head>
     <body>
-      <form action="">
-        <label for="firstName"><mark>First Name</mark>:</label>
-        <input type="text" name="FirstName" id="firstName" placeholder="Ditam" autocomplete="on" required autofocus>
-        <label for="lastName">Last Name:</label>
-        <input type="text" name="lastName" id="lastName" placeholder="Ditam" autocomplete="on" required >
-      </form>
+      <fieldset>
+   <form action="https://httpbin.org/get" method="get">
+
+
+    <label for="firstName">First Name:</label>
+    <input type="text" name="firstName" id="firstName" placeholder="Ditam" autocomplete="on"  required >
+
+    <p>
+
+    <label for="lastName">Last Name</label>
+    <input type="text" name="lastName" id="lastName" autofocus required autocomplete="on" placeholder="Anand">
+      </p>
+
+      <p>
+      <label for="password">Enter Password:</label>
+      <input type="password" name="password" id="password" placeholder="******" required autocomplete="on" >
+    </p>
+    <p>
+      <label for="phone">Phone:</label>
+      <input type="tel" name="phone" id="phone" placeholder="98-0-00-00-000" pattern="">
+    </p>
+  </fieldset>
+   </form>
     </body>
   </html>
